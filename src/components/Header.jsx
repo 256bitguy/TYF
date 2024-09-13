@@ -46,9 +46,9 @@ export default function Header() {
               <div className="flex items-center">
                 <div className="flex-shrink-0">
                   <img
-                    alt="Your Company"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    className="h-8 w-8"
+                    alt="TYF"
+                    src="tyf.png"
+                    className="h-9 w-9 rounded-md "
                   />
                 </div>
                 <div className="hidden md:block">
