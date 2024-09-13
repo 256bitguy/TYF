@@ -3,7 +3,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Data from './shared/Data'
 import Above from './shared/Above'
 import Bottom from './Bottom'
-import { Link, Outlet } from 'react-router-dom'
+import {  Link, Outlet } from 'react-router-dom'
 
 const user = {
   name: 'Tom Cook',
@@ -55,12 +55,12 @@ export default function Header() {
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">
                     {navigation.map((item) => (
-                      <a
-                       href={item.href}
+                      <Link
+                       to='/home'
                        >
                         <h1
-                         key={item.name}
-                         aria-current={item.current ? 'page' : undefined}
+                          
+                        
                          className={classNames(
                           item.current ? 'bg-purple-900 text-white' : 'text-purple-300 hover:bg-purple-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium',
@@ -68,7 +68,7 @@ export default function Header() {
                         {item.name}
                         </h1>
                         
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
