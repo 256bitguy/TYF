@@ -1,8 +1,8 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import Data from './Data'
-import Above from './Above'
-import Bottom from '../Bottom'
+import Data from './shared/Data'
+import Above from './shared/Above'
+import Bottom from './Bottom'
 
 const user = {
   name: 'Tom Cook',

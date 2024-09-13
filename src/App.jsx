@@ -1,5 +1,5 @@
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-import Header from './components/shared/header'
+import Header from './components/Header.jsx'
  
  
 const router=createBrowserRouter([
