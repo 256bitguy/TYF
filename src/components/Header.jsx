@@ -55,8 +55,8 @@ export default function Header() {
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">
                     {navigation.map((item) => (
-                      <Link
-                       to={item.href}
+                      <a
+                       href={item.href}
                        >
                         <h1
                          key={item.name}
@@ -68,7 +68,7 @@ export default function Header() {
                         {item.name}
                         </h1>
                         
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 </div>
