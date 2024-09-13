@@ -99,12 +99,12 @@ export default function Header() {
                     >
                       {userNavigation.map((item) => (
                         <MenuItem key={item.name}>
-                          <a
-                            href={item.href}
+                          <Link
+                            to={item.href}
                             className="block px-4 py-2 text-sm text-purple-700 data-[focus]:bg-purple-100"
                           >
                             {item.name}
-                          </a>
+                          </Link>
                         </MenuItem>
                       ))}
                     </MenuItems>
@@ -126,9 +126,10 @@ export default function Header() {
           <DisclosurePanel className="md:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
               {navigation.map((item) => (
+               <Link to={item.href}>
                 <DisclosureButton
                   key={item.name}
-                  as="a"
+                  
                   href={item.href}
                   aria-current={item.current ? 'page' : undefined}
                   className={classNames(
@@ -137,7 +138,7 @@ export default function Header() {
                   )}
                 >
                   {item.name}
-                </DisclosureButton>
+                </DisclosureButton></Link>
               ))}
             </div>
             
