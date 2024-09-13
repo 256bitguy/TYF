@@ -3,7 +3,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Data from './shared/Data'
 import Above from './shared/Above'
 import Bottom from './Bottom'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 const user = {
   name: 'Tom Cook',
@@ -12,11 +12,11 @@ const user = {
     'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 }
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-  { name: 'Reports', href: '#', current: false },
+  { name: 'Home', href: '/home', current: true },
+  { name: 'Team', href: '/team', current: false },
+  { name: 'Competition', href: '/competition', current: false },
+  { name: 'Contests', href: '/contests', current: false },
+  { name: 'Contact', href: '/contact', current: false },
 ]
 const userNavigation = [
   { name: 'Your Profile', href: '#' },
@@ -55,7 +55,7 @@ export default function Header() {
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
                         aria-current={item.current ? 'page' : undefined}
@@ -65,7 +65,7 @@ export default function Header() {
                         )}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>

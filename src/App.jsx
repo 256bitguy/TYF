@@ -8,14 +8,24 @@ const router=createBrowserRouter([
   {
     path:'/',
     element:<Header/>,
+    errorElement:      <div className="h-screen  bg-gradient-to-r from-custom-purple-dark from-5% via-custom-purple-medium via-55% to-custom-purple-medium to-70% ">
+    <div className='flex justify-center items-center bg-transparent'>
+      <h1 className='font-bold text-2xl text-purple-400'>
+        Sorry!! for the inconvenience caused you can go back </h1>
+    </div>
+    </div>,
     children:[
       {path:'home',
       element:<Home/>
 
       }, 
       {
-        path:'/tour',
-        element:<div>home page</div>
+        path:'contests',
+        element:<div>
+           <h1 className='font-bold text-2xl text-purple-400'>
+        contest page </h1>
+     
+        </div>
       },
       {
         path:'competition',
