@@ -3,6 +3,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Data from './shared/Data'
 import Above from './shared/Above'
 import Bottom from './Bottom'
+import { Outlet } from 'react-router-dom'
 
 const user = {
   name: 'Tom Cook',
@@ -34,7 +35,7 @@ export default function Header() {
         This example requires updating your template:
 
         ```
-        <html class="h-full bg-gray-100">
+        <html class="h-full bg-purple-100">
         <body class="h-full">
         ```
       */}
@@ -59,7 +60,7 @@ export default function Header() {
                         href={item.href}
                         aria-current={item.current ? 'page' : undefined}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.current ? 'bg-purple-900 text-white' : 'text-purple-300 hover:bg-purple-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium',
                         )}
                       >
@@ -73,7 +74,7 @@ export default function Header() {
                 <div className="ml-4 flex items-center md:ml-6">
                   <button
                     type="button"
-                    className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                    className="relative rounded-full bg-purple-400 p-1 text-purple-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-purple-800"
                   >
                     <span className="absolute -inset-1.5" />
                     <span className="sr-only">View notifications</span>
@@ -83,7 +84,7 @@ export default function Header() {
                   {/* Profile dropdown */}
                   <Menu as="div" className="relative ml-3">
                     <div>
-                      <MenuButton className="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                      <MenuButton className="relative flex max-w-xs items-center rounded-full bg-purple-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-purple-800">
                         <span className="absolute -inset-1.5" />
                         <span className="sr-only">Open user menu</span>
                         <img alt="" src={user.imageUrl} className="h-8 w-8 rounded-full" />
@@ -97,7 +98,7 @@ export default function Header() {
                         <MenuItem key={item.name}>
                           <a
                             href={item.href}
-                            className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100"
+                            className="block px-4 py-2 text-sm text-purple-700 data-[focus]:bg-purple-100"
                           >
                             {item.name}
                           </a>
@@ -109,7 +110,7 @@ export default function Header() {
               </div>
               <div className="-mr-2 flex md:hidden">
                 {/* Mobile menu button */}
-                <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md bg-purple-800 p-2 text-purple-400 hover:bg-purple-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-purple-800">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   <Bars3Icon aria-hidden="true" className="block h-6 w-6 group-data-[open]:hidden" />
@@ -128,7 +129,7 @@ export default function Header() {
                   href={item.href}
                   aria-current={item.current ? 'page' : undefined}
                   className={classNames(
-                    item.current ? 'bg-purple-900 text-white' : 'text-gray-300 hover:bg-purple-700 hover:text-white',
+                    item.current ? 'bg-purple-900 text-white' : 'text-purple-300 hover:bg-purple-700 hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium',
                   )}
                 >
@@ -140,54 +141,9 @@ export default function Header() {
           </DisclosurePanel>
         </Disclosure>
 
-        <header className=" bg-transparent  ">
-            <Above/>
-          <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 gap-4 lg:px-8">
-            <h1 className="text-4xl font-bold tracking-tight  text-center text-purple-500 pb-4 ">The Yogesh Forum</h1>
-            <h1 className="text-xs w-full font-bold tracking-tight text-center text-purple-200 ">🌟 A platform for poets, debaters, youth parliamentarians & orators to shine! 🌟</h1>
-          </div>
-        </header>
-        <main className='flex flex-col '>
-        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-                 
-                <div className='items-center flex flex-col gap-4'>
-                    <div className='rounded-lg border h-94'>
-                    <img src='user.png' className='h-96 border rounded-lg p-2'></img>
-                    </div>
-                    <h1 className='text-center text-purple-400 text-3xl font-semibold'>Vivek Raj Srivastava</h1>
-                    <div className='text-center w-11/12 text-purple-200'>
-                        <p>
-                        Currently pursuing Journalism, Soumya Mishra is an aspiring news anchor with extensive oratory expertise and ample experience in Model UN, debates, and youth parliaments.
-                        </p>
-                    </div>
-                 </div>
-          </div>
-          <Data/>
-          <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-                <div className='m-2'>
-                <h1 className='text-purple-200 font-semibold text-center text-2xl'><span className='text-purple-500 font-bold text-3xl'>UpComing </span>Events</h1>
-                    <h1 className='text-purple-200 text-center'>The hardly speech comp</h1>
-
-                </div>
-                <div className='items-center flex flex-col gap-4'>
-                    <div className='rounded-lg border border-custom-purple-light h-94'>
-                    <img src='uset.jpg' className='h-96 border rounded-lg p-2'></img>
-                    </div>
-                    <h1 className='text-center text-purple-400 text-5xl font-semibold'>Bliss Orator</h1>
-                    <ul className='text-white text-sm flex flex-col gap-y-2'>
-                    <li><span className='text-purple-400 font-bold'>Info:</span>    August 8, 2028, Online mode</li>
-                    <li><span className='text-purple-400 font-bold'>Register:</span>    August 8, 2028, Online mode</li>
-                    <li><span className='text-purple-400 font-bold'>Entry fees:</span>    August 8, 2028, Online mode</li>
-                        <li><span className='text-purple-400 font-bold'>Prize Pool:</span>    August 8, 2028, Online mode</li>
-                        
-                         
-                    </ul>
-                    <button className='h-12 w-32 text-purple-600 border rounded-md bg-purple-200 border-white'>Register</button>
-                </div>
-          </div>
-          
-        </main>
-        <Bottom/>
+       <div>
+        <Outlet/>
+       </div>
       </div>
     </>
   )

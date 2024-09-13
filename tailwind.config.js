@@ -9,7 +9,8 @@ export default {
       colors: {
         'custom-purple-light': '#580b9a',
         'custom-purple-dark': '#360561',
-        'custom-purple-medium': '#2A064A'
+        'custom-purple-medium': '#2A064A',
+        'custom-blue-dark':'#280348'
       },
     },
   },
