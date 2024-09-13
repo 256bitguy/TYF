@@ -1,6 +1,7 @@
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Header from './components/shared/header'
-import Home from './components/shared/header'
+ 
+ 
 const router=createBrowserRouter([
   {
     path:'/',
