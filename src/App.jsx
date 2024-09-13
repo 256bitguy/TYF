@@ -4,7 +4,7 @@ import Home from './components/shared/header'
 const router=createBrowserRouter([
   {
     path:'/',
-    element:<Home/>
+    element:<Header/>
   },
   {
     path:'/tour',
@@ -28,9 +28,7 @@ function App() {
   
 
   return (
-   <RouterProvider router={router}/>
-
-    
+     <RouterProvider router={router}/>
   )
 }
 
