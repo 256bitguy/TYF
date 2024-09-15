@@ -22,8 +22,7 @@ export default  function Home() {
             <h1 className='text-center text-purple-400 text-3xl font-semibold'>Vivek Raj Srivastava</h1>
             <div className='text-center w-11/12 text-purple-200'>
                 <p>
-                Currently pursuing Journalism, Soumya Mishra is an aspiring news anchor with extensive oratory expertise and ample experience in Model UN, debates, and youth parliaments.
-                </p>
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tempore quisquam illo ut labore aperiam sit iusto adipisci laudantium aut, saepe provident dolor suscipit. Eos officiis architecto fuga impedit inventore?                </p>
             </div>
          </div>
   </div>
