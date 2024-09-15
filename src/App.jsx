@@ -1,9 +1,9 @@
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Header from './components/Header.jsx'
 import Home from './components/Home.jsx'
-import Competition from './components/Competition.jsx'
-import Team from './components/Team.jsx'
-import Contest from './Contest.jsx'
+import Competition from './components/competition/Competition.jsx'
+import Team from './components/Team/Team.jsx'
+import Contest from './components/contests/Contest.jsx'
 import Connect from './components/Connect.jsx'
  
  
