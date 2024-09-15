@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Judge from "./judge";
+ 
 import Details from "./Details";
+import Judge from "./judge";
  const prize=[
   {
     src:'user.png',
