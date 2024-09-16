@@ -1,8 +1,5 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import Data from './shared/Data'
-import Above from './shared/Above'
-import Bottom from './Bottom'
 import {  Link, Outlet } from 'react-router-dom'
 
 const user = {
@@ -12,7 +9,7 @@ const user = {
     'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 }
 const navigation = [
-  { name: 'Home', href: '/home', current: true },
+  { name: 'Home', href: '/', current: true },
   { name: 'Team', href: '/team', current: false },
   { name: 'Competition', href: '/competition', current: false },
   { name: 'Contests', href: '/contests', current: false },

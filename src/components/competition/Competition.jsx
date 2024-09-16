@@ -4,20 +4,19 @@ import Details from "./Details";
 import Judge from "./Judge";
  const prize=[
   {
-    src:'user.png',
+    src:'first.png',
     alt:'user',
     title:"First Prize",
     cash:'200$/-'
   },
   {
-    src:'tyf.png',
+    src:'second.png',
     alt:'asdf',
     title:"Second Prize",
     cash:'100$/-'
   }, {
-    src:      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    
-    alt:'user',
+    src: 'third.jpeg',
+   alt:'user',
     title:"Third Prize",
     cash:'50$/-'
   },  

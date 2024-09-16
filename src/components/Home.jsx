@@ -17,9 +17,9 @@ export default  function Home() {
          
         <div className='items-center flex flex-col gap-4'>
             <div className='rounded-lg border h-94'>
-            <img src='user.png' className='h-96 border rounded-lg p-2'></img>
+            <img src='tyf.png' className='h-96 border rounded-lg p-2'></img>
             </div>
-            <h1 className='text-center text-purple-400 text-3xl font-semibold'>Vivek Raj Srivastava</h1>
+            <h1 className='text-center text-purple-400 text-3xl font-semibold'>Name of the Founder panel / designed page</h1>
             <div className='text-center w-11/12 text-purple-200'>
                 <p>
  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tempore quisquam illo ut labore aperiam sit iusto adipisci laudantium aut, saepe provident dolor suscipit. Eos officiis architecto fuga impedit inventore?                </p>
